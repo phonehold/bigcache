@@ -498,7 +498,7 @@ TSPluginInit(int argc, const char *argv[])
 	info.plugin_name = const_cast<char*>(PLUGIN_NAME);
 	info.vendor_name = const_cast<char*>("nimbus networks");
 	info.support_email = const_cast<char*>("jaekyung.oh@nimbusnetworks.co.kr");
-	info.plugin_version = const_cast<char*>("plugin version : remap_bgcache 1.0");
+	//info.plugin_version = const_cast<char*>("plugin version : remap_bgcache 1.0");
 
 	if (TSPluginRegister(TS_SDK_VERSION_3_0, &info) != TS_SUCCESS) {
 		TSError("[backcache] Plugin registration failed.\n");
